@@ -1,0 +1,74 @@
+<!-- Bismillah YBM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Javascript hacks</title>
+
+</head>
+<body>
+	<!-- 8 Useful Javascript Hacks-->
+<p id="paragraph">Hello Epicop!</p>
+<script type="text/javascript">
+
+var person = {
+
+	name:'Syed Mehmood Khundmeer',
+	role: 'programmer',
+	phone: '786',
+	likesyoutube: true
+};
+
+
+// check conditions with && operator 
+person.name && console.log("Yeah");
+
+
+
+//debug JS easily using debugger
+var a = 1;
+debugger;
+a+=4;
+
+
+// convert to boolean using !! operator
+function bucket(water) {
+	this.water = water;
+	this.hasWater = !! water;
+}
+
+var w = new bucket(3);
+console.log(w.hasWater);
+
+
+// convert string to number using (+)
+var a = "123456";
+console.log(+a);
+
+
+//set default value using ||
+
+var b = person.name || "Doesn't have";
+console.log(b);
+
+
+//template string using ``
+var myName = "Moosa";
+var c = `Hello Im  ${myName}  a programmer!`;
+console.log(c);
+
+
+// get last item from an array using .slice()
+let array = [1,2,3,4,5];
+console.log(array.slice(-1));
+
+
+// HTML "ID" Hack for JS. But it is a bad practice, so don't use item
+paragraph.style.color = 'blue';
+</script>
+</body>
+</html>
